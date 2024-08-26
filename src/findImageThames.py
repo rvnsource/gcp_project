@@ -6,7 +6,6 @@ PROJECT_ID = "river-span-431711-k8"
 REGION = "us-central1"
 vertexai.init(project=PROJECT_ID, location=REGION)
 
-#IMAGE_FILE = "gs://generativeai-downloads/images/scones.jpg"
 IMAGE_FILE = "/Users/ravi/gcp_project/data/raw/By_The_River_Thames_at_Vauxhall,_London_-_geograph.org.uk_-_5726285.jpg"
 image = Image.load_from_file(IMAGE_FILE)
 prompt = "What is shown in this image? and give 3 more similar places in the world"
